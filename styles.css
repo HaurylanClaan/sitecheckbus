@@ -383,3 +383,56 @@ footer {
 }
 
 /* rodape site */
+/* virtualizacao para smartphones*/
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px; 
+    }
+
+    header img {
+        max-height: 80px; 
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 15px; 
+    }
+
+    .servicosinicial {
+        margin: 20px auto; 
+    }
+
+    .card1,
+    .card2 {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .servicos {
+        margin-top: 10px; 
+    }
+
+    .servicos fieldset {
+        margin: 0 10px; 
+    }
+
+    #tabelaservicos {
+        margin: 10px; 
+    }
+
+    main {
+        padding: 10px; 
+    }
+
+    section#contato {
+        padding: 20px; 
+    }
+
+    .cartaocontato {
+        width: calc(100% - 40px);
+        margin: 10px auto; 
+    }
+}
