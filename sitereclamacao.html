@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbus.complaint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo">
+    </header>
+
+
+<!-- barra de navegacao -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="siteservicos.html">Rotas</a></li>
+            <li><a href="#reclamacoes">Reclamações</a></li>
+            <li><a href="sitecontato.html">Contato</a></li>
+        </ul>
+    </nav>
+<!-- barra de navegação -->
+
+
+<!-- registro de reclamacao -->
+    <main>
+        <form>
+            <fieldset>
+                <legend>Selecione o problema:</legend>
+                <input type="checkbox" id="atraso" name="problema" value="atraso">
+                <label for="atraso">Atraso nos horários</label><br>
+
+                <input type="checkbox" id="conforto" name="problema" value="conforto">
+                <label for="conforto">Falta de conforto nos ônibus</label><br>
+
+                <input type="checkbox" id="ar_condicionado" name="problema" value="ar_condicionado">
+                <label for="conforto">Ar condicionado com problema </label><br>
+
+                <input type="checkbox" id="desrespeito" name="problema" value="desrespeito">
+                <label for="conforto">Desrespeito</label><br>
+            </fieldset>
+
+            <h2>Registre Sua Reclamação:</h2>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            <hr>
+            <div><label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required></div>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+<!-- registro de reclamacao -->
+
+
+<!-- rodape -->
+    <footer>
+        <p>© 2024 CHECKBUS. Todos os direitos reservados.</p>
+    </footer>
+<!-- rodape -->
+
+
+</body>
+</html>

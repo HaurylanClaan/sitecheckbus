@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbus.services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo">
+    </header>
+
+    <!-- barra de navegacao -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#servicos">Rotas</a></li>
+            <li><a href="sitereclamacao.html">Reclamações</a></li>
+            <li><a href="sitecontato.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <!-- barra de navegacao -->
+  
+    <!-- seletores -->
+    <div class="servicos">
+        <h2>Selecione as Opcões:</h2>
+        <fieldset>
+            <legend>Selecione o turno:</legend>
+            <label for="turno">Turno:</label>
+            <select id="turno">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+                <option value="madrugada">Madrugada</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Selecione qual o numero do seu Ônibus:</legend>
+            <label for="numero_onibus">Numero do Ônibus:</label>
+            <select id="numero_onibus">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Selecione a opcão que deseja:</legend>
+            <label for="opcao_desejada">Opção desejada:</label>
+            <select id="opcao_desejada">
+                <option value="rota">Mostrar rota do Ônibus</option>
+                <option value="horarios">Horários</option>
+                <option value="outras_opcoes">Outras opcões</option>
+            </select>
+        </fieldset>
+
+        <!-- botao enviar -->
+        <div class="servicos">
+            <button id="enviar">Enviar</button>
+        </div>
+        <!-- botao enviar -->
+    </div>
+    <!-- seletores -->
+
+    <!-- tabela informacoes -->
+    <div id="tabelaservicos"></div>
+    <!-- tabela informacoes -->
+
+    <!-- rodape -->
+    <footer class="footer_servicos">
+        <p>© 2024 CHECKBUS. Todos os direitos reservados.</p>
+    </footer>
+    <!-- rodape -->
+</body>
+</html>

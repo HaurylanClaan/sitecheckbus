@@ -1,0 +1,323 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* titulo do site */
+header {
+    background-color: #03277f; 
+    color: #fffffff3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header img {
+    max-height: 115px;
+    margin-left: 0 10px;
+}
+/* titulo do site */
+
+
+/* animacao titulo */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1, header img {
+    animation: fadeIn 1s ease-out;
+}
+/* animacao titulo */
+
+
+/* barra de navegacao */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align:left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+/* barra de navegacao */
+
+
+/* site inicial */
+h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+/* site inicial */
+
+
+/* site servicos */
+/* seletores*/
+.servicos {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.servicos h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.servicos fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.servicos fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.servicos label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.servicos select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+.servicos select:hover {
+    border-color: #007bff;
+}
+
+.servicos select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+/* seletores*/
+
+/* botao enviar */
+.servicos button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+.servicos button:hover {
+    background-color: #0056b3;
+}
+/* botao enviar */
+
+
+/* tabela servicos--> */
+table {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+thead th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+tbody td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#tabelaservicos {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 150px; 
+    padding-bottom: 20px; 
+    border-radius: 8px;
+    overflow-x: auto;
+}
+/* tabela servicos--> */
+/* site servicos */
+
+
+/* site reclamacao form */
+main {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* site reclamacao form */
+form input[type="checkbox"] {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+form input[type="checkbox"] + label {
+    font-weight: bold;
+    color: #333;
+    display: inline-block; 
+    margin-right: 15px;
+}
+
+form textarea {
+    width: calc(100% - 22px);
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+/* site reclamacao form */
+
+/* site contatos */
+section#contato {
+    padding: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cartaocontato {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartaocontato img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* site contatos */
+
+/* rodape site */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer_servicos {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    height: 40px; /* Altura definida para o rodapé */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* rodape site */
