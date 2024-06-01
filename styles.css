@@ -76,13 +76,75 @@ nav ul li a:hover {
 
 
 /* site inicial */
-h3 {
+.servicosinicial {
+    max-width: 1200px; 
+    margin: 50px auto;
     text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    border: 2px solid #333;
-    margin: 20px;
 }
+
+.tituloinicial h2{
+    color: #007bff;
+    margin-bottom: 10px; 
+}
+
+.tituloinicial2 {
+    margin-top: 0px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center, justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* cards inicial */
+.card1,
+.card2 {
+    width: calc(33.33% - 40px);
+    margin: 20px; 
+    padding: 20px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-out;
+    display: inline-block; 
+    vertical-align: top; 
+    text-align: center; 
+    margin-bottom: 100px;
+}
+
+.card1 img,
+.card2 img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 15px; 
+}
+
+.card1:hover,
+.card2:hover {
+    transform: translateY(-5px);
+}
+
+.card1 h4,
+.card2 h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card1 p,
+.card2 p {
+    font-size: 16px;
+    color: #666;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+/* cards inical*/
 /* site inicial */
 
 
