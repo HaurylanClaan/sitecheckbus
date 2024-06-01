@@ -383,14 +383,15 @@ footer {
 }
 
 /* rodape site */
+
 /* virtualizacao para smartphones*/
 @media screen and (max-width: 768px) {
     header {
-        padding: 10px; 
+        padding: 10px;
     }
 
     header img {
-        max-height: 80px; 
+        max-height: 60px;
     }
 
     nav {
@@ -398,41 +399,52 @@ footer {
     }
 
     nav ul li a {
-        padding: 10px 15px; 
+        padding: 10px 15px;
     }
 
     .servicosinicial {
-        margin: 20px auto; 
+        margin: 20px auto;
     }
 
     .card1,
     .card2 {
-        width: 100%; 
-        margin: 10px 0; 
-    }
-
-    .servicos {
-        margin-top: 10px; 
-    }
-
-    .servicos fieldset {
-        margin: 0 10px; 
-    }
-
-    #tabelaservicos {
+        width: calc(50% - 20px);
         margin: 10px; 
     }
 
+    .servicos {
+        margin-top: 10px;
+    }
+
+    .servicos fieldset {
+        margin: 0 10px;
+    }
+
+    #tabelaservicos {
+        margin: 10px;
+    }
+
     main {
-        padding: 10px; 
+        padding: 10px;
     }
 
     section#contato {
-        padding: 20px; 
+        padding: 20px;
     }
 
     .cartaocontato {
-        width: calc(100% - 40px);
-        margin: 10px auto; 
+        width: calc(50% - 20px);
+        margin: 10px;
     }
+}
+
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card1,
+.card2 {
+    margin: 10px auto;
 }
