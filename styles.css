@@ -263,7 +263,7 @@ tbody tr:nth-child(even) {
     border-radius: 8px;
     overflow-x: auto;
 }
-/* tabela servicos--> */
+/* tabela servicos */
 /* site servicos */
 
 
@@ -376,13 +376,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 5px;
-    height: 40px; /* Altura definida para o rodapé */
+    height: 40px; 
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 /* rodape site */
+
 
 /* virtualizacao para smartphones*/
 @media screen and (max-width: 768px) {
@@ -408,8 +409,15 @@ footer {
 
     .card1,
     .card2 {
-        width: calc(50% - 20px);
-        margin: 10px; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .card1 h4,
+    .card2 h4,
+    .card1 p,
+    .card2 p {
+        font-size: 14px; 
     }
 
     .servicos {
@@ -444,7 +452,3 @@ header {
     box-sizing: border-box;
 }
 
-.card1,
-.card2 {
-    margin: 10px auto;
-}
